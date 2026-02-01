@@ -3,6 +3,15 @@
 A professional static landing page for a dog walking company.
 
 👉 [View the live site](#)
+<br>
+
+## Figma Spec Sheet
+<img src='./images/dogmigo-spec1.png' height='100px' width='100px'>
+<img src='./images/dogmigo-spec2.png' height='100px' width='100px'>
+<img src='./images/dogmigo-spec3.png' height='100px' width='100px'>
+<img src='./images/dogmigo-spec4.png' height='100px' width='100px'>
+<img src='./images/dogmigo-spec5.png' height='100px' width='100px'>
+<img src='./images/dogmigo-spec6.png' height='100px' width='100px'>
 
 ## About This Project
 
