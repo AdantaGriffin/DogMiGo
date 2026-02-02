@@ -3,6 +3,10 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 header {
   z-index: 10;
   display: grid;
