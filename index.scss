@@ -1,11 +1,10 @@
 
-
 header{
     z-index: 10;
     display: grid;
     grid-template-columns: 20% 60% 20%;
     padding: 10px;
-    height: 10vh;
+    height: 9vh;
     position: fixed;
     top: 0;
     right: 0;
@@ -67,7 +66,8 @@ main{
     section{
         z-index: 1;
         min-height: 90vh;
-        padding-top: 10vh;
+        padding-top: 9vh;
+        border: 2px solid red;
     }
     
     .section-one{
@@ -154,6 +154,95 @@ main{
                 position: relative;
                 bottom: 40px;
                 left: 40px;
+            }
+        }
+    }
+
+    .section-two{
+        .section-heading{
+            border: 1px solid blue;
+            text-align: center;
+            margin-bottom: 10px;
+            h6{
+                color: #ca4949;
+                font-size: 1.1em;
+            }
+            h3{
+                font-size: 2.5em;
+            }
+            p{
+                font-size: 1.5em;
+            }
+        }
+        .section-two-services{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .service{
+                border: 1px solid black;
+                width: 360px;
+                height: 200px;
+                margin: 10px;
+                h4{
+                    font-size: 1.2em;
+                }
+                p{
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+
+    .section-three{
+        .section-heading{
+            border: 1px solid blue;
+            text-align: center;
+            margin-bottom: 10px;
+            h6{
+                color: #ca4949;
+                font-size: 1.1em;
+            }
+            h3{
+                font-size: 2.5em;
+            }
+            p{
+                font-size: 1.5em;
+            }
+        }
+    }
+    
+    .section-four{
+        .section-heading{
+            border: 1px solid blue;
+            text-align: center;
+            margin-bottom: 10px;
+            h6{
+                color: #ca4949;
+                font-size: 1.1em;
+            }
+            h3{
+                font-size: 2.5em;
+            }
+            p{
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .section-five{
+        .section-heading{
+            border: 1px solid blue;
+            text-align: center;
+            margin-bottom: 10px;
+            h6{
+                color: #ca4949;
+                font-size: 1.1em;
+            }
+            h3{
+                font-size: 2.5em;
+            }
+            p{
+                font-size: 1.5em;
             }
         }
     }

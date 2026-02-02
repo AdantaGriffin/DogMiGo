@@ -3,13 +3,14 @@ header {
   display: grid;
   grid-template-columns: 20% 60% 20%;
   padding: 10px;
-  height: 10vh;
+  height: 9vh;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 header .logo {
@@ -56,7 +57,8 @@ header .login-start .start {
 main section {
   z-index: 1;
   min-height: 90vh;
-  padding-top: 10vh;
+  padding-top: 9vh;
+  border: 2px solid red;
 }
 main .section-one {
   display: grid;
@@ -139,5 +141,80 @@ main .section-one .section-one-right .completed-walks {
   bottom: 40px;
   left: 40px;
 }
-
-/*# sourceMappingURL=index.css.map */
+main .section-two .section-heading {
+  border: 1px solid blue;
+  text-align: center;
+  margin-bottom: 10px;
+}
+main .section-two .section-heading h6 {
+  color: #ca4949;
+  font-size: 1.1em;
+}
+main .section-two .section-heading h3 {
+  font-size: 2.5em;
+}
+main .section-two .section-heading p {
+  font-size: 1.5em;
+}
+main .section-two .section-two-services {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+main .section-two .section-two-services .service {
+  border: 1px solid black;
+  width: 360px;
+  height: 200px;
+  margin: 10px;
+}
+main .section-two .section-two-services .service h4 {
+  font-size: 1.2em;
+}
+main .section-two .section-two-services .service p {
+  font-size: 1.1em;
+}
+main .section-three .section-heading {
+  border: 1px solid blue;
+  text-align: center;
+  margin-bottom: 10px;
+}
+main .section-three .section-heading h6 {
+  color: #ca4949;
+  font-size: 1.1em;
+}
+main .section-three .section-heading h3 {
+  font-size: 2.5em;
+}
+main .section-three .section-heading p {
+  font-size: 1.5em;
+}
+main .section-four .section-heading {
+  border: 1px solid blue;
+  text-align: center;
+  margin-bottom: 10px;
+}
+main .section-four .section-heading h6 {
+  color: #ca4949;
+  font-size: 1.1em;
+}
+main .section-four .section-heading h3 {
+  font-size: 2.5em;
+}
+main .section-four .section-heading p {
+  font-size: 1.5em;
+}
+main .section-five .section-heading {
+  border: 1px solid blue;
+  text-align: center;
+  margin-bottom: 10px;
+}
+main .section-five .section-heading h6 {
+  color: #ca4949;
+  font-size: 1.1em;
+}
+main .section-five .section-heading h3 {
+  font-size: 2.5em;
+}
+main .section-five .section-heading p {
+  font-size: 1.5em;
+}/*# sourceMappingURL=index.css.map */
