@@ -5,6 +5,7 @@ html {
 
 body {
   font-family: sans-serif;
+  background: rgba(235, 233, 233, 0.498);
 }
 
 header {
@@ -74,6 +75,7 @@ main section {
 main .section-one {
   display: grid;
   grid-template-columns: 50% 50%;
+  background-color: white;
 }
 main .section-one .section-one-left {
   padding: 10px;
@@ -153,13 +155,12 @@ main .section-one .section-one-right .completed-walks {
   left: 40px;
 }
 main .section-two .section-heading {
-  border: 1px solid blue;
   text-align: center;
   margin-bottom: 10px;
 }
 main .section-two .section-heading h6 {
   color: #ca4949;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 main .section-two .section-heading h3 {
   font-size: 2.5em;
@@ -173,25 +174,32 @@ main .section-two .section-two-services {
   flex-wrap: wrap;
 }
 main .section-two .section-two-services .service {
-  border: 1px solid black;
+  border: 0.5px light lightgrey;
   width: 360px;
   height: 200px;
   margin: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+main .section-two .section-two-services .service:hover {
+  box-shadow: 1px 1px 50px lightgrey;
+  transition: ease-in-out 600ms;
 }
 main .section-two .section-two-services .service h4 {
   font-size: 1.2em;
 }
 main .section-two .section-two-services .service p {
   font-size: 1.1em;
+  line-height: 2em;
+  font-size: 0.9em;
 }
 main .section-three .section-heading {
-  border: 1px solid blue;
   text-align: center;
   margin-bottom: 10px;
 }
 main .section-three .section-heading h6 {
   color: #ca4949;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 main .section-three .section-heading h3 {
   font-size: 2.5em;
@@ -206,21 +214,30 @@ main .section-three .sign-up-steps {
   margin: 100px 0;
 }
 main .section-three .sign-up-steps .step {
-  border: 1px solid blue;
+  border: 0.5px solid lightgrey;
+  border-radius: 20px;
   height: 200px;
   width: 200px;
   margin: 5px;
   text-align: center;
   align-content: center;
+  padding: 20px;
+}
+main .section-three .sign-up-steps .step:hover {
+  box-shadow: 1px 1px 50px lightgrey;
+  transition: ease-in-out 600ms;
+}
+main .section-four #color {
+  color: white;
+  background-color: #293a6c;
 }
 main .section-four .section-heading {
-  border: 1px solid blue;
   text-align: center;
   margin-bottom: 10px;
 }
 main .section-four .section-heading h6 {
   color: #ca4949;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 main .section-four .section-heading h3 {
   font-size: 2.5em;
@@ -235,7 +252,8 @@ main .section-four .prices {
        column-gap: 20px;
 }
 main .section-four .prices .plan {
-  border: 1px solid blue;
+  box-shadow: 1px 1px 10px grey;
+  border-radius: 20px;
   padding: 20px;
   display: grid;
 }
@@ -259,20 +277,24 @@ main .section-four .prices .plan .button-container button {
   width: 200px;
   height: 30px;
   border: 3px solid black;
+  border-radius: 20px;
 }
 main .section-four .prices .plan .button-container #switch {
   border: none;
   background-color: #f45959;
   color: white;
 }
+main .section-five {
+  background-color: #293a6c;
+  color: white;
+}
 main .section-five .section-heading {
-  border: 1px solid blue;
   text-align: center;
   margin-bottom: 10px;
 }
 main .section-five .section-heading h6 {
   color: #ca4949;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 main .section-five .section-heading h3 {
   font-size: 2.5em;
@@ -281,28 +303,32 @@ main .section-five .section-heading p {
   font-size: 1.5em;
 }
 main .section-five .reviews {
-  border: 2px solid green;
   display: flex;
   justify-content: space-evenly;
   padding: 40px;
 }
 main .section-five .reviews .testimonial {
-  border: 1px solid black;
   border-radius: 20px;
+  border: 0.5px solid grey;
   height: 350px;
   width: 300px;
   display: grid;
   padding: 10px;
   grid-template-rows: 20% 60 20%;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 main .section-five .reviews .testimonial .star-container {
   display: flex;
 }
-main .section-six {
+main .section-six .section-six-container {
+  width: 95%;
+  padding: 100px 0;
+  margin: auto;
   text-align: center;
   color: white;
   background-color: #f45959;
+  border-radius: 20px;
 }
 main .section-six h2 {
   font-size: 84px;
