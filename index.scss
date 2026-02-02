@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
 
 header{
     z-index: 10;
@@ -68,6 +72,8 @@ main{
         min-height: 90vh;
         padding-top: 9vh;
         border: 2px solid red;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
     }
     
     .section-one{
@@ -209,8 +215,22 @@ main{
                 font-size: 1.5em;
             }
         }
+        .sign-up-steps{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 100px 0;
+            .step{
+                border: 1px solid blue;
+                height: 200px;
+                width: 200px;
+                margin: 5px;
+                text-align: center;
+                align-content: center;
+            }
+        }
     }
-    
+
     .section-four{
         .section-heading{
             border: 1px solid blue;
@@ -227,8 +247,46 @@ main{
                 font-size: 1.5em;
             }
         }
+        .prices{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            .plan{
+                border: 1px solid blue;
+                padding: 20px;
+                display: grid;
+                .plan-heading-container{
+                    h4{
+                        font-size: 1.5em;
+                    }
+                }
+                .price-font{
+                    font-size: 2em;
+                }
+                .plan-list{
+                    list-style: none;
+                    line-height: 2em;
+                    margin-bottom: 100px;
+                }
+                .button-container{
+                    height: 40px;
+                    align-content: center;
+                    text-align: center;
+                    button{
+                        width: 200px;
+                        height: 30px;
+                        border: 3px solid black;
+                    }
+                    #switch{
+                        border: none;
+                        background-color: #f45959;
+                        color: white;
+                    }
+                }
+            }
+        }
     }
-
+    
     .section-five{
         .section-heading{
             border: 1px solid blue;
@@ -243,6 +301,54 @@ main{
             }
             p{
                 font-size: 1.5em;
+            }
+        }
+        .reviews{
+            border: 2px solid green;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 40px;
+            .testimonial{
+                border: 1px solid black;
+                border-radius: 20px;
+                height: 350px;
+                width: 300px;
+                display: grid;
+                padding: 10px;
+                grid-template-rows: 20% 60 20%;
+                align-items: center;
+                .star-container{
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .section-six{
+        text-align: center;
+        color: white;
+        background-color: #f45959;
+        h2{
+            font-size: 84px;
+        }
+        blockquote{
+            .section-sub-heading{
+                font-size: 30px;
+            }
+            button{
+                width: 260px;
+                height: 40px;
+                background-color: white;
+                color: #f45959;
+                border: none;
+                border-radius: 20px;
+                box-shadow: 1px 1px 10px black;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .cancel{
+                font-size: .6em;
             }
         }
     }

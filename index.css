@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
 header {
   z-index: 10;
   display: grid;
@@ -59,6 +64,8 @@ main section {
   min-height: 90vh;
   padding-top: 9vh;
   border: 2px solid red;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 main .section-one {
   display: grid;
@@ -188,6 +195,20 @@ main .section-three .section-heading h3 {
 main .section-three .section-heading p {
   font-size: 1.5em;
 }
+main .section-three .sign-up-steps {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 100px 0;
+}
+main .section-three .sign-up-steps .step {
+  border: 1px solid blue;
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+  text-align: center;
+  align-content: center;
+}
 main .section-four .section-heading {
   border: 1px solid blue;
   text-align: center;
@@ -203,6 +224,43 @@ main .section-four .section-heading h3 {
 main .section-four .section-heading p {
   font-size: 1.5em;
 }
+main .section-four .prices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+main .section-four .prices .plan {
+  border: 1px solid blue;
+  padding: 20px;
+  display: grid;
+}
+main .section-four .prices .plan .plan-heading-container h4 {
+  font-size: 1.5em;
+}
+main .section-four .prices .plan .price-font {
+  font-size: 2em;
+}
+main .section-four .prices .plan .plan-list {
+  list-style: none;
+  line-height: 2em;
+  margin-bottom: 100px;
+}
+main .section-four .prices .plan .button-container {
+  height: 40px;
+  align-content: center;
+  text-align: center;
+}
+main .section-four .prices .plan .button-container button {
+  width: 200px;
+  height: 30px;
+  border: 3px solid black;
+}
+main .section-four .prices .plan .button-container #switch {
+  border: none;
+  background-color: #f45959;
+  color: white;
+}
 main .section-five .section-heading {
   border: 1px solid blue;
   text-align: center;
@@ -217,4 +275,49 @@ main .section-five .section-heading h3 {
 }
 main .section-five .section-heading p {
   font-size: 1.5em;
+}
+main .section-five .reviews {
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+main .section-five .reviews .testimonial {
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 350px;
+  width: 300px;
+  display: grid;
+  padding: 10px;
+  grid-template-rows: 20% 60 20%;
+  align-items: center;
+}
+main .section-five .reviews .testimonial .star-container {
+  display: flex;
+}
+main .section-six {
+  text-align: center;
+  color: white;
+  background-color: #f45959;
+}
+main .section-six h2 {
+  font-size: 84px;
+}
+main .section-six blockquote .section-sub-heading {
+  font-size: 30px;
+}
+main .section-six blockquote button {
+  width: 260px;
+  height: 40px;
+  background-color: white;
+  color: #f45959;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px black;
+}
+main .section-six blockquote button:hover {
+  cursor: pointer;
+}
+main .section-six blockquote .cancel {
+  font-size: 0.6em;
 }/*# sourceMappingURL=index.css.map */
