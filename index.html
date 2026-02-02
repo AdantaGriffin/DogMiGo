@@ -7,34 +7,84 @@
     <title>Product Launch Page</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="logo">
-            <img alt="paw-logo"/>
+            <a href="#home">
+                <img src="./images/love-paw.png" width="30px" height="30px" alt="paw-logo"/>
+            </a>
             <h1>DogMiGo</h1>
         </div>
-        <nav class="header-navigation"></nav>
+        <nav class="header-navigation">
+            <ul class="nav-list">
+                <li class="list-item">
+                    <a href="#features">Features</a>
+                </li>
+                <li class="list-item">
+                    <a href="#how-it-works">How It Works</a>
+                </li>
+                <li class="list-item">
+                    <a href="#pricing">Pricing</a>
+                </li>
+                <li class="list-item">
+                    <a href="#testimonials">Reviews</a>
+                </li>
+            </ul>
+        </nav>
         <div class="login-start">
-            <a href="#">Log In</a>
-            <a href="#">Get Started</a>
+            <a class="login" href="#">Log In</a>
+            <a class="start" href="#"> Get Started</a>
         </div>
     </header>
 
     <main>
-        <section class="section-one">
-            <img alt="paw-logo"/>
-            <div>trusted bt 10,000+ pet parents</div>
-            <h2>Happy pets, happy life.</h2>
-            <p>Premium dog walking services that give your furry friend the adventure the deserve. Professional, reliable and filled with love.</p>
-            <div>
-                <button>Book Your First Walk</button>
-                <button>See How It Works</button>
+        <section id="home" class="section-one">
+            <div class="section-one-left">
+                <div class="section-one-trust">
+                    <img src="./images/love-paw.png" height="30px" width="30px" alt="paw-logo"/>
+                    <div>trusted bt 10,000+ pet parents</div>
+                </div>
+                <div>
+                    <h2>Happy pets,<br> happy life.</h2>
+                    <p>Premium dog walking services that give your furry friend the adventure the deserve. Professional, reliable and filled with love.</p>
+                </div>
+                <div class="section-one-buttons">
+                    <button class="book">Book Your First Walk</button>
+                    <button class="how">See How It Works</button>
+                </div>
+                <div class="section-one-rating">
+                    <div>
+                        <img src="./images/pawSecOne.png" width="20px" height="20px" alt="paw design">
+                        <img src="./images/pawSecOne.png" width="20px" height="20px" alt="paw design">
+                        <img src="./images/pawSecOne.png" width="20px" height="20px" alt="paw design">
+                        <img src="./images/pawSecOne.png" width="20px" height="20px" alt="paw design">
+                    </div>
+                    <div>
+                        <div class="star">
+                            <img src="./images/star.png" height="20px" width="20px" alt="rating star">
+                            <img src="./images/star.png" height="20px" width="20px" alt="rating star">
+                            <img src="./images/star.png" height="20px" width="20px" alt="rating star">
+                            <img src="./images/star.png" height="20px" width="20px" alt="rating star">
+                            <img src="./images/star.png" height="20px" width="20px" alt="rating star">
+                        </div>
+                        <div class="rating">4.95/5 from 2,000+ reviews</div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <div>rating stars</div>
-                <div>4.95/5 from 2,000+ reviews</div>
+            <div class="section-one-right">
+                <div class="free">
+                    <p>First walk FREE</p>
+                </div>
+                <img src="./images/wiley.jpeg" height="550px" width="450px" alt="dog">
+                <div class="completed-walks">
+                    <img src="./images/paw.png" height="50px" width="50px" alt="paw">
+                    <div>
+                        <p><b>50,000+</b></p>
+                        <p>Walks completed</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="section-two">
+        <section id="features" class="section-two">
             <h6>WHY CHOOSE US</h6>
             <h3>Everything your pet deserves</h3>
             <p>We've thought of every detail to make sure your furry friend gets the best care possible.</p>
@@ -65,7 +115,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-three">
+        <section id="how-it-works" class="section-three">
             <h6>HOW IT WORKS</h6>
             <h3>Simple as a walk in the park</h3>
             <p>Gettin started takes just a few minutes. Here is how easy it is.</p>
@@ -88,7 +138,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-four">
+        <section id="testimonials" class="section-four">
             <h6>TESTIMONIALS</h6>
             <h3>Loved by pet parents everywhere</h3>
             <p>Don't just take our word for it. Here's what our community has to say.</p>
@@ -98,7 +148,7 @@
                 <div class="testimonial"></div>
             </div>
         </section>
-        <section class="section-five">
+        <section id="pricing" class="section-five">
             <h6>PRICING</h6>
             <h3>Simple, transparent pricing</h3>
             <p>Choose the plan thats fit's your pu's lifestyle. No hidden fees, ever.</p>

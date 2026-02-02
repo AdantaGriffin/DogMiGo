@@ -1,2 +1,160 @@
-body{
+
+
+header{
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    padding: 10px;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(20px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+
+    .header-navigation{
+        font: {
+            size: 18px;
+        }
+        align-content: center;
+        .nav-list{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+    .login-start{
+        font: {
+            size: 18px;
+        }
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        a{
+            text-decoration: none;
+            border: 1px solid #ca4949;
+            padding: 10px;
+            width: 45%;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .login{
+            border: none;
+            color: black;
+        }
+        .start{
+            box-shadow: 1px 1px 5px #ca4949;
+            color: white;
+            background-color: #f45959;
+
+        }
+    }
+}
+
+main{
+    section{
+        z-index: 1;
+        min-height: 90vh;
+        padding-top: 10vh;
+    }
+    
+    .section-one{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .section-one-left{
+            padding: 10px;
+            display: grid;
+            grid-template-rows: 10% 60% 10% 10%;
+            .section-one-trust{
+                background-color: lightblue;
+                padding: 3px 15px;
+                border-radius: 20px;
+                width: 250px;
+                height: 40px;
+                position: relative;
+                top: 50px;
+                display: flex;
+                align-items: center;
+            }
+            h2{
+                font: {
+                    size: 84px;
+                }
+            }
+            p{
+                font: {
+                    size: 22px;
+                }
+            }
+            .section-one-buttons{
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                button{
+                    height: 60%;
+                    width: 45%;
+                    border-radius: 20px;
+                    font: {
+                        size: 14px;
+                    }
+                }
+                    .book{
+                        background-color: #f45959;
+                        color: white;
+                    }
+                    .how{
+                        background-color: white;
+                    }
+            }
+            .section-one-rating{
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+                margin-left: 6%;
+                align-items: center;
+            }
+        }
+        .section-one-right{
+            align-items: center;
+            text-align: center;
+            .free{
+                position: relative;
+                left: 475px;
+                top: 30px;
+                border-radius: 20px;
+                color: white;
+                background-color: #f45959;
+                align-content: center;
+                height: 50px;
+                width: 150px;
+            }
+            img{
+                border-radius: 20px;
+            }
+            .completed-walks{
+                display: flex;
+                align-items: center;
+                width: 200px;
+                border-radius: 35px;
+                box-shadow: 1px 1px 10px grey;
+                background-color: white;
+                position: relative;
+                bottom: 40px;
+                left: 40px;
+            }
+        }
+    }
 }
