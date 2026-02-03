@@ -1,3 +1,111 @@
+@media screen and (max-width: 1100px) {
+  .section-one-left h2 {
+    font-size: 64px !important;
+  }
+  .section-one-left .section-one-rating {
+    width: 70% !important;
+  }
+  .section-five .testimonial {
+    width: 250px !important;
+  }
+  .section-six h2 {
+    font-size: 62px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    padding: 0 20px !important;
+  }
+  header .header-navigation {
+    display: none;
+  }
+  .section-one {
+    display: flex;
+    flex-wrap: wrap !important;
+  }
+  .section-one-left {
+    width: 200% !important;
+    box-sizing: border-box;
+  }
+  .section-one-left .section-one-trust {
+    width: 95% !important;
+    font-size: 12px !important;
+    padding: 1px !important;
+  }
+  .section-one-left h2 {
+    font-size: 64px !important;
+  }
+  .section-one-left p {
+    width: 95%;
+    line-height: 1.6em;
+    font-size: 20px !important;
+    margin: auto;
+  }
+  .section-one-left .section-one-buttons {
+    width: 95% !important;
+    margin: auto;
+    display: flex;
+    justify-content: space-around !important;
+  }
+  .section-one-left .section-one-buttons button {
+    width: 200px !important;
+    height: 50px !important;
+    margin: 10px 0;
+  }
+  .section-one-left .section-one-rating {
+    width: 75% !important;
+    position: relative;
+    right: 15px;
+  }
+  .section-one-right {
+    display: none !important;
+  }
+  .section-two .service {
+    width: 375px !important;
+    text-align: center;
+    padding: 20px;
+  }
+  .section-four .prices {
+    display: block !important;
+  }
+  .section-four .prices .plan {
+    margin-bottom: 20px;
+    padding-left: 150px !important;
+  }
+  .section-four .prices .plan ul {
+    padding: 0;
+    margin: 0;
+  }
+  .section-four .prices .plan button {
+    position: relative;
+    right: 65px;
+  }
+  .section-five .reviews {
+    display: grid !important;
+    grid-template-rows: 1fr 1fr 1fr !important;
+  }
+  .section-five .reviews .testimonial {
+    margin-bottom: 20px;
+  }
+  .footer-container {
+    display: block !important;
+  }
+  .footer-container .top {
+    display: block !important;
+  }
+  .left-top {
+    position: relative;
+    left: 35%;
+  }
+  .section-one-right {
+    margin: auto;
+  }
+  footer .left-top {
+    font-size: 28px;
+  }
+}
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
@@ -11,7 +119,7 @@ body {
 header {
   z-index: 10;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 20% 50% 30%;
   padding: 10px;
   height: 9vh;
   position: fixed;
@@ -67,9 +175,10 @@ header .login-start .start {
 main section {
   z-index: 1;
   min-height: 90vh;
+  width: 95%;
+  margin: auto;
   padding-top: 9vh;
-  border: 2px solid red;
-  scroll-snap-align: start;
+  scroll-snap-align: proximity;
   scroll-snap-stop: always;
 }
 main .section-one {
@@ -78,9 +187,10 @@ main .section-one {
   background-color: white;
 }
 main .section-one .section-one-left {
-  padding: 10px;
+  box-sizing: border-box;
+  padding: 5px;
   display: grid;
-  grid-template-rows: 10% 60% 10% 10%;
+  grid-template-rows: 10% 60% 40%;
 }
 main .section-one .section-one-left .section-one-trust {
   background-color: lightblue;
@@ -89,7 +199,8 @@ main .section-one .section-one-left .section-one-trust {
   width: 250px;
   height: 40px;
   position: relative;
-  top: 50px;
+  top: 50%;
+  right: 1%;
   display: flex;
   align-items: center;
 }
@@ -101,6 +212,7 @@ main .section-one .section-one-left p {
 }
 main .section-one .section-one-left .section-one-buttons {
   width: 80%;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,6 +222,9 @@ main .section-one .section-one-left .section-one-buttons button {
   width: 45%;
   border-radius: 20px;
   font-size: 14px;
+}
+main .section-one .section-one-left .section-one-buttons button:hover {
+  cursor: pointer;
 }
 main .section-one .section-one-left .section-one-buttons .book {
   background-color: #f45959;
@@ -126,33 +241,40 @@ main .section-one .section-one-left .section-one-rating {
   align-items: center;
 }
 main .section-one .section-one-right {
-  align-items: center;
+  box-sizing: border-box;
+}
+main .section-one .section-one-right .section-one-right-container {
+  height: 100%;
   text-align: center;
 }
-main .section-one .section-one-right .free {
-  position: relative;
-  left: 475px;
-  top: 30px;
+main .section-one .section-one-right .section-one-right-container .free p {
   border-radius: 20px;
   color: white;
   background-color: #f45959;
   align-content: center;
   height: 50px;
   width: 150px;
+  position: absolute;
+  top: 14%;
+  right: 10%;
+  z-index: 9;
 }
-main .section-one .section-one-right img {
-  border-radius: 20px;
+main .section-one .section-one-right .section-one-right-container img {
+  border-radius: 10px;
+  margin-top: 10%;
+  transform: rotate(5deg);
+  box-shadow: 1px 1px 10px grey;
 }
-main .section-one .section-one-right .completed-walks {
+main .section-one .section-one-right .section-one-right-container .completed-walks {
   display: flex;
   align-items: center;
   width: 200px;
   border-radius: 35px;
   box-shadow: 1px 1px 10px grey;
   background-color: white;
-  position: relative;
-  bottom: 40px;
-  left: 40px;
+  position: absolute;
+  bottom: 15%;
+  right: 30%;
 }
 main .section-two .section-heading {
   text-align: center;
@@ -169,13 +291,15 @@ main .section-two .section-heading p {
   font-size: 1.5em;
 }
 main .section-two .section-two-services {
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 main .section-two .section-two-services .service {
   border: 0.5px light lightgrey;
-  width: 360px;
+  width: 300px;
   height: 200px;
   margin: 10px;
   background-color: white;
@@ -304,7 +428,7 @@ main .section-five .section-heading p {
 }
 main .section-five .reviews {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 40px;
 }
 main .section-five .reviews .testimonial {
@@ -320,6 +444,9 @@ main .section-five .reviews .testimonial {
 }
 main .section-five .reviews .testimonial .star-container {
   display: flex;
+}
+main .section-six {
+  margin-bottom: 20px;
 }
 main .section-six .section-six-container {
   width: 95%;
@@ -350,4 +477,48 @@ main .section-six blockquote button:hover {
 }
 main .section-six blockquote .cancel {
   font-size: 0.6em;
+}
+
+footer {
+  padding: 5px;
+  background-color: #293a6c;
+  color: white;
+}
+footer .footer-container {
+  display: grid;
+  grid-template-rows: 90% 10%;
+}
+footer .footer-container .top {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+footer .footer-container .top .top-container-left {
+  display: grid;
+  grid-template-rows: 60% 40%;
+}
+footer .footer-container .top .top-container-left .left-top, footer .footer-container .top .top-container-left .left-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .footer-container .top .top-container-left .left-top {
+  width: 25%;
+}
+footer .footer-container .top .top-container-right {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .footer-container .top .top-container-right .list ul {
+  list-style: none;
+}
+footer .footer-container .top .top-container-right h6 {
+  font-size: 1em;
+}
+footer .footer-container .top .top-container-right li {
+  font-size: 0.8em;
+  line-height: 1.7em;
+}
+footer .footer-container .bottom {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=index.css.map */
