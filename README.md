@@ -2,7 +2,7 @@
 
 A professional static landing page for a dog walking company.
 
-👉 [View the live site](#)
+👉 [View the live site](https://dogmigo.netlify.app/)
 <br>
 
 ## Figma Spec Sheet
